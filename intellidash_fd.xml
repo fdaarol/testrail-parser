@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S10</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Setup/Login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2326</id>
+				<title>Login</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12526, 12527</references>
+																				<custom>
+										<preconds>change device langnuage and intellidash too</preconds>
+										<steps>Use credentials:
+
+user: etltestcustomer@toro.com
+
+pass: BigBr0ther</steps>
+										<expected>Intellidash shall login successfully.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2439</id>
+				<title>Logout then Login</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Use credentials:
+
+user: etltestcustomer@toro.com
+
+pass: BigBr0ther</steps>
+										<expected>Intellidash shall login and out successfully.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2441</id>
+				<title>Lock Widgets  &amp; Hover</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>1. lock and unlock widgets.
+2. When unlocking widgets make sure they are able to be re organized on all devices. 
+
+
+
+</steps>
+										<expected>Unlock shall allow users to reorganize widgets.  When in locked mode no widgets shall be allowed to be reorganized. 
+
+Desktop:
+Verify when hovering over the lock widget icon that information is shown. Verify in all languages.
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2445</id>
+				<title>Warning</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps> </steps>
+										<expected>check translations</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2446</id>
+				<title>Enabling/Disabling Widgets</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12495</references>
+																				<custom>
+										<steps>From the widget drop down list add and remove widgets by selecting and unselecting widgets.</steps>
+										<expected>Selected widgets shall be added to the main window. Unselected widgets will not be displayed on the main window. Also any notification pertaining to the disabled widgets shall not be present. 
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Main Icon Functions</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Notifications</name>
+		<description>Verify all sub cases and possible translations</description>
+						<cases>
+												<case>
+				<id>C2443</id>
+				<title>Mark All as Read</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>1. Verify there are some notification present.
+2. Click on Mark as Read.
+</steps>
+										<expected>Notification will be marked as read with no blue circle next to the notification. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2440</id>
+				<title>Verify all Notifications</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Have few notifications from Lynx or widgets to create a notification.
+
+
+Lynx
+download failed notification
+
+Turf Guard
+Moisture out of range
+
+Playbooks Coverage
+Low Inventory 
+
+</steps>
+										<expected>All added notifications for widgets and Lynx shall be displayed on the Notifications Panel.
+
+
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2592</id>
+				<title>Delete a Single Notification</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Delete a single notification from the notifications panel. </steps>
+										<expected>The notifications shall be removed. Close and open the panel to verify it has been removed. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2593</id>
+				<title>Refresh Button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Click on the refresh button.
+</steps>
+										<expected>Verify notification data has been updated.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2594</id>
+				<title>Delete All</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Click on Delete All txt Button.</steps>
+										<expected>Verify that all notifications have been removed.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2595</id>
+				<title>Desktop Hover Notification Icon</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Hover over Notifications button 
+</steps>
+										<expected>verify information of the icon is displayed and translated</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>User Feedback</name>
+		<description>Verify all sub cases and possible translations</description>
+						<cases>
+												<case>
+				<id>C2442</id>
+				<title>MSG Window Pop Up</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Click on feedback icon 
+</steps>
+										<expected>verify that the pop up window to send message is displayed.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2596</id>
+				<title>Desktop Hover - MSG Font, Bold,....</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Hover over all icons in a desktop computer using Fire Fox</steps>
+										<expected>Verify each icon displayed correct information and translated.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2597</id>
+				<title>Send a Feedback MSG Succefully</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Create a message and click on the send button.</steps>
+										<expected>Message shall be sent successfully.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2598</id>
+				<title>Cancel MSG</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Click the Cancel button while on the msg pop up window 
+</steps>
+										<expected>When Cancel has been pressed the app shall return to the main window 
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2603</id>
+				<title>Desktop Hover - Main Feedback Icon</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>User Preferences</name>
+		<description>Verify all sub cases and possible translations</description>
+						<cases>
+												<case>
+				<id>C2444</id>
+				<title>General Tab</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12497</references>
+																				<custom>
+										<steps>Click on the drop-down lists and verify all selections are available and translated.
+
+ Language
+ Units for Measure
+ Group Decimal Separator
+ Date Format
+ Temperature Scale
+
+
+
+</steps>
+										<expected>All areas of the General Tab shall be translated with the same selectable elements on each drop-down list.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2599</id>
+				<title>Alerts Tab</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>Configure the following accounts for user notifications:
+ 
+ Email Address: alex.rodriguez@toro.com
+ SMS: 909-725-7076
+ Duplicate Range (min) = 1,440
+
+Enable all apps for email and SMS msgs
+
+ Geofencing
+ Lynx
+ PLaybooks Coverage
+ Turf Guard
+
+
+
+
+
+
+ </steps>
+										<expected>Notifications shall be sent for the enabled email accounts.
+
+All translations for the area shall not affect notification.
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2600</id>
+				<title>Save/Cancel</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>1. Save a configuration.
+2. Change a configuration and select cancel</steps>
+										<expected>1. When saving configurations, it shall be saved on the app and the same configuration shall be loaded when opening the reference window again.
+
+2. When selecting cancel and there has been a change to the reference settings, these changes shall not be saved on the app.
+
+ </expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Setup Wizard</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2449</id>
+				<title>Go Next Button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2450</id>
+				<title>Skip Button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12510</references>
+																			</case>
+															<case>
+				<id>C2451</id>
+				<title>Translation</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2473</id>
+				<title>(Last Page) FAQ Translations</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Integration</name>
+		<description>ezLocactor - playbooks - taskTracker</description>
+						<cases>
+												<case>
+				<id>C2608</id>
+				<title>Guide Visibibility</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12504, 12505</references>
+																			</case>
+															<case>
+				<id>C2497</id>
+				<title>API Key integration</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12506</references>
+																				<custom>
+										<preconds>playbooks:
+https://www.covsys.net/Premium/Mobile/Index?courseurl=9754c179-dc77-4048-ad7b-0919ec4e0032
+ 
+
+</preconds>
+									</custom>
+							</case>
+															<case>
+				<id>C2498</id>
+				<title>Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12503</references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Enabling/Disabling Widgets</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2465</id>
+				<title>TORO - NSN, Decision Tree, GCSAA Feedback</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2466</id>
+				<title>Weather - Evapotranspiration, Forecast, Frost Warning, Radar, Graphs</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2467</id>
+				<title>Lynx - Cloud, Pump Stations, Weather Stations, Weather, Graphs</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2468</id>
+				<title>Turf Guard - Moisture, Salinity, Temperature</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2469</id>
+				<title>MyTurf - Orders, Maintenance</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2470</id>
+				<title>ezLocator</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2471</id>
+				<title>playbooks Coverage</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2472</id>
+				<title>taskTracker - Daily Measurements, Labor Summary, Safety and Training</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Widget</name>
+		<description>![](index.php?/attachments/get/ae595af3-f9f1-4638-8c6b-b3fe83f8a563)</description>
+										<sections>
+		<section>
+		<name>Decision Tree</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2501</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12523, 12514</references>
+																			</case>
+															<case>
+				<id>C2503</id>
+				<title>Units (Metric/Imperial) - Estimated Rain, Threshold, Breakdown</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2504</id>
+				<title>Groups and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>ezLocator</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2505</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2506</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>GCSAA Newsfeed</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2509</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2510</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2621</id>
+				<title>Expand Article</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12512</references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>GCSAA Newsfeed (ALT)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2507</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2508</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2622</id>
+				<title>Expand Article</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<expected>fails</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Lynx Cloud</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2511</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2512</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2620</id>
+				<title>Date Format &gt; See More &gt; Top right date</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Lynx: Pump Stations</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2514</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2552</id>
+				<title>Units (Metric/Imperial)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>psi and gpm (imperial)
+bar and l/min (metric)
+</steps>
+										<expected>values are correctly converted too</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2551</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Lynx: Weather Stations</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2516</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12511</references>
+																			</case>
+															<case>
+				<id>C2553</id>
+				<title>Units (Metric/Imperial) - Evapotranspiration and Precipitation</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<preconds> 
+</preconds>
+										<steps>inches &quot; (imperial)
+mm (metric)
+ 
+
+</steps>
+										<expected>values are correctly converted</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2554</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2556</id>
+				<title>Units (Celsius/Fahrenheit) - Temperature</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Lynx: Weather Graphs</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2518</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12508</references>
+																			</case>
+															<case>
+				<id>C2555</id>
+				<title>Units (Metric/Imperial) - Wind and Precipitation</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2557</id>
+				<title>Units (Celsius/Fahrenheit) - Dew Point, Temperature</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2619</id>
+				<title>Date Format</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2634</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)  - Graph &gt; Humidity and Precipitation</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Weather: Graphs</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2548</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12508</references>
+																				<custom>
+										<preconds>playbooks:
+https://www.covsys.net/Premium/Mobile/Index?courseurl=9754c179-dc77-4048-ad7b-0919ec4e0032
+ 
+
+</preconds>
+									</custom>
+							</case>
+															<case>
+				<id>C2558</id>
+				<title>Units (Metric/Imperial) - Wind and Precipitation</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2559</id>
+				<title>Units (Celsius/Fahrenheit) - Dew Point, Temperature</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2618</id>
+				<title>Date Format</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>myTurf: Orders</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2519</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2520</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2657</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00) - View Carts total Cost</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>myTurf: Maintenance</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2521</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2522</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>NSN</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2523</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2524</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2560</id>
+				<title>Date Format - Expiration</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>MM/DD/YY
+MM-DD-YY
+MM.DD.YY
+
+DD/MM/YY
+DD-MM-YY
+DD.MM.YY 
+
+
+
+
+
+
+</steps>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>playbooks Coverage</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2525</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2526</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2632</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>taskTracker: Daily Measurements</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2527</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2528</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2564</id>
+				<title>Units (Metric/Imperial) - US qt or Stimp under course</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2562</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2563</id>
+				<title>Units (Celsius/Fahrenheit) - Hi or Low</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>taskTracker: Labor Summary</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2529</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2530</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12518</references>
+																			</case>
+															<case>
+				<id>C2565</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>taskTracker: Safety and Training</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2531</id>
+				<title>External Links</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2532</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Turf Guard: Moisture</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2534</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2567</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Turf Guard: Salinity</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2536</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2568</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2570</id>
+				<title>Units (Metric/Imperial)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<preconds>dS/m (imperial)
+mmho/cm (metric)
+ </preconds>
+										<expected>values are correctly converted
+
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Turf Guard: Temperature</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2538</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2569</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2571</id>
+				<title>Units (Celsius/Fahrenheit)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Weather: Evapotranspiration</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2540</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2572</id>
+				<title>Units (Metric/Imperial)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																				<custom>
+										<steps>inches &amp;lt;=&amp;gt; mm</steps>
+									</custom>
+							</case>
+															<case>
+				<id>C2575</id>
+				<title>Group and Decimal Separator (1,000.00 or 1.000,00)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2633</id>
+				<title>Date Format - expand horizontally</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Weather: Forecast</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2542</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2573</id>
+				<title>Units (Metric/Imperial) - Rain measurement, wind speed</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2574</id>
+				<title>Units (Celsius/Fahrenheit)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2611</id>
+				<title>Resize Function - Expand horizontally and shows more details on iPad/Desktop</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Weather: Frost Warning</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2544</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2656</id>
+				<title>Units (Celsius/Fahrenheit) - Expand horizontally</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+			<section>
+		<name>Weather: Radar</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2546</id>
+				<title>Data and Functionality</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12517, 12508</references>
+																			</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Extra Tests</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2576</id>
+				<title>Moving Widgets (unlock/lock)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2578</id>
+				<title>Alarms/Alerts</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references>12513</references>
+																			</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Resize Applicable Widgets  (tablet/Desktop)</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2612</id>
+				<title>Weather: Forecast, Frost Warning, Evapotranspiration (Horizontal)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2614</id>
+				<title>Lynx: Cloud</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+															<case>
+				<id>C2615</id>
+				<title>turf Guard: Salinity, Moisture, Temperature (Horizontal)</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																																				<references></references>
+																			</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
